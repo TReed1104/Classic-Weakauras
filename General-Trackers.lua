@@ -7,21 +7,40 @@
     },
     ["controlledChildren"] = {
         [1] = "Sunder Armor",
-        [2] = "GAPP",
-        [3] = "GNPP",
-        [4] = "GSPP",
-        [5] = "Limited Invulnerability Potion",
-        [6] = "Holy Strength Active",
+        [2] = "Holy Strength Active",
+        [3] = "Limited Invulnerability Potion",
+        [4] = "Nature Protection Potion",
+        [5] = "Arcane Protection Potion",
+        [6] = "Shadow Protection Potion",
+        [7] = "Fire Protection Potion",
     },
     ["borderBackdrop"] = "Blizzard Tooltip",
-    ["authorOptions"] = {
-    },
+    ["scale"] = 1,
     ["xOffset"] = 0,
     ["border"] = false,
     ["yOffset"] = -376,
     ["anchorPoint"] = "CENTER",
     ["borderSize"] = 2,
-    ["borderInset"] = 1,
+    ["animation"] = {
+        ["start"] = {
+            ["easeStrength"] = 3,
+            ["type"] = "none",
+            ["duration_type"] = "seconds",
+            ["easeType"] = "none",
+        },
+        ["main"] = {
+            ["easeStrength"] = 3,
+            ["type"] = "none",
+            ["duration_type"] = "seconds",
+            ["easeType"] = "none",
+        },
+        ["finish"] = {
+            ["easeStrength"] = 3,
+            ["type"] = "none",
+            ["duration_type"] = "seconds",
+            ["easeType"] = "none",
+        },
+    },
     ["borderColor"] = {
         [1] = 0,
         [2] = 0,
@@ -31,59 +50,42 @@
     ["actions"] = {
         ["start"] = {
         },
-        ["init"] = {
-        },
         ["finish"] = {
+        },
+        ["init"] = {
         },
     },
     ["triggers"] = {
         [1] = {
             ["trigger"] = {
+                ["debuffType"] = "HELPFUL",
                 ["type"] = "aura2",
-                ["subeventSuffix"] = "_CAST_START",
-                ["event"] = "Health",
-                ["subeventPrefix"] = "SPELL",
                 ["spellIds"] = {
                 },
+                ["subeventSuffix"] = "_CAST_START",
+                ["unit"] = "player",
                 ["names"] = {
                 },
-                ["unit"] = "player",
-                ["debuffType"] = "HELPFUL",
+                ["event"] = "Health",
+                ["subeventPrefix"] = "SPELL",
             },
             ["untrigger"] = {
             },
         },
     },
-    ["scale"] = 1,
-    ["internalVersion"] = 33,
+    ["authorOptions"] = {
+    },
+    ["borderOffset"] = 4,
     ["borderEdge"] = "Square Full White",
     ["selfPoint"] = "BOTTOMLEFT",
     ["id"] = "General Trackers",
     ["regionType"] = "group",
     ["frameStrata"] = 1,
     ["anchorFrameType"] = "SCREEN",
-    ["borderOffset"] = 4,
-    ["uid"] = "QXqje45q9iK",
-    ["animation"] = {
-        ["start"] = {
-            ["type"] = "none",
-            ["easeStrength"] = 3,
-            ["duration_type"] = "seconds",
-            ["easeType"] = "none",
-        },
-        ["main"] = {
-            ["type"] = "none",
-            ["easeStrength"] = 3,
-            ["duration_type"] = "seconds",
-            ["easeType"] = "none",
-        },
-        ["finish"] = {
-            ["type"] = "none",
-            ["easeStrength"] = 3,
-            ["duration_type"] = "seconds",
-            ["easeType"] = "none",
-        },
+    ["config"] = {
     },
+    ["borderInset"] = 1,
+    ["internalVersion"] = 33,
     ["subRegions"] = {
     },
     ["conditions"] = {
@@ -102,6 +104,5 @@
             },
         },
     },
-    ["config"] = {
-    },
+    ["uid"] = "QXqje45q9iK",
 }
