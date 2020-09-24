@@ -6,59 +6,35 @@
         [4] = 0.5,
     },
     ["controlledChildren"] = {
-        [1] = "Sunder Armor",
-        [2] = "Holy Strength Active",
-        [3] = "Limited Invulnerability Potion",
-        [4] = "Nature Protection Potion",
-        [5] = "Arcane Protection Potion",
-        [6] = "Shadow Protection Potion",
-        [7] = "Fire Protection Potion",
+        [1] = "Sunder Armor Tracker",
+        [2] = "Crusader Proc Active",
     },
     ["borderBackdrop"] = "Blizzard Tooltip",
     ["scale"] = 1,
-    ["xOffset"] = 0,
     ["border"] = false,
     ["yOffset"] = -376,
     ["anchorPoint"] = "CENTER",
     ["borderSize"] = 2,
-    ["animation"] = {
-        ["start"] = {
-            ["easeStrength"] = 3,
-            ["type"] = "none",
-            ["duration_type"] = "seconds",
-            ["easeType"] = "none",
-        },
-        ["main"] = {
-            ["easeStrength"] = 3,
-            ["type"] = "none",
-            ["duration_type"] = "seconds",
-            ["easeType"] = "none",
-        },
-        ["finish"] = {
-            ["easeStrength"] = 3,
-            ["type"] = "none",
-            ["duration_type"] = "seconds",
-            ["easeType"] = "none",
-        },
-    },
+    ["uid"] = "QXqje45q9iK",
     ["borderColor"] = {
         [1] = 0,
         [2] = 0,
         [3] = 0,
         [4] = 1,
     },
+    ["regionType"] = "group",
     ["actions"] = {
         ["start"] = {
         },
-        ["finish"] = {
-        },
         ["init"] = {
+        },
+        ["finish"] = {
         },
     },
     ["triggers"] = {
         [1] = {
             ["trigger"] = {
-                ["debuffType"] = "HELPFUL",
+                ["subeventPrefix"] = "SPELL",
                 ["type"] = "aura2",
                 ["spellIds"] = {
                 },
@@ -67,25 +43,44 @@
                 ["names"] = {
                 },
                 ["event"] = "Health",
-                ["subeventPrefix"] = "SPELL",
+                ["debuffType"] = "HELPFUL",
             },
             ["untrigger"] = {
             },
         },
     },
-    ["authorOptions"] = {
-    },
-    ["borderOffset"] = 4,
     ["borderEdge"] = "Square Full White",
+    ["internalVersion"] = 33,
+    ["borderOffset"] = 4,
     ["selfPoint"] = "BOTTOMLEFT",
     ["id"] = "General Trackers",
-    ["regionType"] = "group",
+    ["animation"] = {
+        ["start"] = {
+            ["type"] = "none",
+            ["easeStrength"] = 3,
+            ["duration_type"] = "seconds",
+            ["easeType"] = "none",
+        },
+        ["main"] = {
+            ["type"] = "none",
+            ["easeStrength"] = 3,
+            ["duration_type"] = "seconds",
+            ["easeType"] = "none",
+        },
+        ["finish"] = {
+            ["type"] = "none",
+            ["easeStrength"] = 3,
+            ["duration_type"] = "seconds",
+            ["easeType"] = "none",
+        },
+    },
     ["frameStrata"] = 1,
     ["anchorFrameType"] = "SCREEN",
-    ["config"] = {
+    ["authorOptions"] = {
     },
     ["borderInset"] = 1,
-    ["internalVersion"] = 33,
+    ["config"] = {
+    },
     ["subRegions"] = {
     },
     ["conditions"] = {
@@ -104,5 +99,5 @@
             },
         },
     },
-    ["uid"] = "QXqje45q9iK",
+    ["xOffset"] = 0,
 }
